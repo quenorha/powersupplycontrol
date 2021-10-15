@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apte-get update
+apt-get update
 apt-get install python-pip
 pip install pymodbus
 chmod +x /root/powersupplycontrol/powersupplycontrol.py
