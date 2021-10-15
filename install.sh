@@ -1,6 +1,7 @@
 #!/bin/bash
 
-apt-get install pip
+apte-get update
+apt-get install python-pip
 pip install pymodbus
 chmod +x /root/powersupplycontrol/powersupplycontrol.py
 cp /root/powersupplycontrol/powersupplycontrol.service /etc/systemd/system/
