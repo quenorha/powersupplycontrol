@@ -5,7 +5,7 @@ Conflicts=getty@tty1.service
 
 [Service]
 Type=simple
-ExecStart=/root/powersupplycontrol.py
+ExecStart=/root/powersupplycontrol/powersupplycontrol.py
 StandardInput=tty-force
 
 [Install]
