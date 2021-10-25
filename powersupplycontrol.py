@@ -11,7 +11,7 @@ import logging
 from threading import Thread, Lock
 from pyModbusTCP.client import ModbusClient
 
-SERVER_HOST = "192.168.1.63"
+SERVER_HOST = "192.168.1.37"
 SERVER_PORT = 502
 
 # set global
@@ -44,7 +44,7 @@ def polling_thread():
         else  :
           #  print("tcp open")
         # do modbus reading on socket
-         reg_list = c.read_holding_registers(0)
+         reg_list = c.read_holding_registers(1282)
         # if read is ok, store result in regs (with thread lock synchronization)
          if reg_list:
             with regs_lock:
